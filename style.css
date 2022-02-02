@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+    font-family: sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(105, 105, 214);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+header {
+    background-color: rgb(49, 49, 136);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#logo {
+    width: 5rem;
+    height: 5rem;
+}
+
+#header-text {
+    color: rgb(237, 235, 252);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+    font-size: 60px;
+    font-family: 'Indie Flower', cursive;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    align-self: center;
+    align-items: center;
+}
+
+#city-name-input {
+    background-color: rgb(200, 200, 248);
+    border: 2px solid rgb(35, 35, 65);
+    height: 3rem;
+    width: 50%;
+    border-radius: 5px;
+    font-size: 22px;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    padding-left: 0.5rem;
+}
+
+#search-button {
+    background-color: rgb(49, 49, 136);
+    color: rgb(237, 235, 252);
+    border: 2px solid rgb(35, 35, 65);
+    width: 15%;
+    height: 2rem;
+    border-radius: 5px;
+}
+
+/* Weather card section */
+
+.container {
+    background-color: rgb(49, 49, 136);
+    color: rgb(237, 235, 252);
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    border-radius: 5px;
+}
+
+#weather-data {
+    display: flex;
+    align-items: center;
+}
+
+#weather-description {
+    margin-left: 1rem;
+}
+
+
+footer {
+    background-color: rgb(38, 38, 104);
+    color: rgb(237, 235, 252);
+    width: 100%;
+    margin-top: auto;
+    text-align: center;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 600px) {
+    header{
+        padding: 1rem 0;
+    }
+    
+    #header-text {
+        font-size: 40px;
+    }
+
+    #logo {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    section {
+        width: 90%;
+    }
+
+    #city-name-input{
+        width: 90%;
+        height: 3rem;
+    }
+
+    #search-button{
+        width: 30%;
+        height: 3rem;
+    }
+}
